@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.container{width: 1200px;margin: 0 auto;}
+
+
+.menu{height: 60px;}
+.menu>ul{display: flex;justify-content:space-between;
+    height: 100%;}
+.menu>ul>li{width: calc(100% / 5);}
+.menu>ul>li>a{
+    display: flex;justify-content: center;align-items: center;
+    width: 100%;height: 100%;
+    background: rgb(218, 176, 176);
+}
+.menu>ul>li>a:hover{
+    background: rgb(245, 240, 240);
+}
+
+.visual{
+    height: 300px;background-color: rgb(152, 200, 226);
+}
+/* company */
+.visual.company{
+    height: 200px;background-color: gold;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+/* contents */
+/* .section{}
+.section .aside{float:right;
+    width: 290px;height: 800px;
+    background: pink;}
+.section .contents{float:left;
+    width: 900px;height: 800px;
+    background: #eee;} */
+
+.section{height: 800px;
+    display: flex;justify-content: space-between;}
+.section .aside{width: 290px;
+    background: pink;order:2}
+.section .aside .contents{
+    width: 900px; background: pink;order:1}
+
+
+
+
+    
+.footer{background: rgb(195, 137, 227);
+    padding: 30px 0;
+}
